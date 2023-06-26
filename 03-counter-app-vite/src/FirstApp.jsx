@@ -2,6 +2,6 @@ import React from 'react'
 
 export const FirstApp = () => {
   return (
-    <div>First App</div>
+    <h2>First App</h2>
   )
 }
