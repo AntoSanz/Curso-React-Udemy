@@ -7,6 +7,12 @@ export const FirstProps = ({title, subTitle}) => {
 }
 
 FirstProps.propTypes = {
+    subTitle: PropTypes.number, //Propiedad de tipo number no obligatoria
     title: PropTypes.string.isRequired, //Propiedad de tipo string y obligatoria
-    subTitle: PropTypes.number
+}
+
+FirstProps.defaultProps = {
+    name: 'Antonio Sanz Pans',
+    subTitle: 'No hay subtítulo',
+    title: 'No hay ningún título.',
 }
