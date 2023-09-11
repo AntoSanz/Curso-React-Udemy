@@ -13,5 +13,8 @@ rafc
 # Lanzar la aplicación en web
 yarn dev
 
+## Jest
 # Dependencias Jest
 yarn add -D @types/jest
+# Dependencias Babel
+yarn add --dev babel-jest @babel/core @babel/preset-env
