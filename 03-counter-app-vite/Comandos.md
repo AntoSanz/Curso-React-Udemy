@@ -12,3 +12,6 @@ rafc
 
 # Lanzar la aplicación en web
 yarn dev
+
+# Dependencias Jest
+yarn add -D @types/jest
