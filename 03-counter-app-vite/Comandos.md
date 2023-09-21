@@ -16,5 +16,7 @@ yarn dev
 ## Jest
 # Dependencias Jest
 yarn add -D @types/jest
+yarn add -D whatwg-fetch
+
 # Dependencias Babel
 yarn add --dev babel-jest @babel/core @babel/preset-env
