@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         {/* <HelloWorldApp /> */}
         {/* <FirstApp /> */}
-        <FirstProps />
+        <FirstProps  />
         {/* <CounterApp value={ 10 } /> */}
     </React.StrictMode>
 );

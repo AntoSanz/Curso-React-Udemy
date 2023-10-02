@@ -1,26 +1,25 @@
 //rafc = Short cut para crear un componente
 import PropTypes from 'prop-types';
 
-export const FirstProps = ({title, subTitle, name}) => {
-    console.log(title);
-    console.log(subTitle + 1);
+export const FirstProps = ({title, age, name}) => {
     return(
         <>  
             <h1>{title}</h1>
-            <p>{subTitle}</p>
             <p>{name}</p>
+            <p>Edad: {age}</p>
+            
         </>
     );
 }
 
 FirstProps.propTypes = {
     subTitle: PropTypes.number, //Propiedad de tipo number no obligatoria
-    title: PropTypes.string.isRequired, //Propiedad de tipo string y obligatoria
-    
+    name: PropTypes.string, //Propiedad de tipo string y obligatoria
+    title: PropTypes.string.isRequired,
 }
 
 FirstProps.defaultProps = {
-    name: 'Antonio Sanz Pans',
-    subTitle: 'No hay subtítulo',
-    title: 'No hay ningún título.',
+    // name: 'No hay nombre',
+    // age: 'No hay subtítulo',
+    // title: 'No hay ningún título.',
 }
