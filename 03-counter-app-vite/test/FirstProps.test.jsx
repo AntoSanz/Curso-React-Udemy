@@ -6,4 +6,4 @@ describe('Pruebas en <FirstProps />', () => {
         const title = "Hello World";
         render(<FirstProps title={title}/>);
     });
- })
+ });

@@ -8,4 +8,4 @@ describe('Pruebas en 11-async-await', () => {
 
         expect(typeof url).toBe('string');
     });
-})
+});
