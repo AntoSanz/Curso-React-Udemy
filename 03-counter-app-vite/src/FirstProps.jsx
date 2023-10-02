@@ -19,7 +19,7 @@ FirstProps.propTypes = {
 }
 
 FirstProps.defaultProps = {
-    // name: 'No hay nombre',
-    // age: 'No hay subtítulo',
+    name: 'No hay nombre',
+    age: 'No hay subtítulo',
     // title: 'No hay ningún título.',
 }
