@@ -1,4 +1,4 @@
-import { getByTestId, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { FirstProps } from '../src/FirstProps';
 
 describe('Pruebas en <FirstProps /> ', () => {

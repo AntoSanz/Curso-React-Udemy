@@ -13,8 +13,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* <HelloWorldApp /> */}
         {/* <FirstApp /> */}
         {/* <FirstProps title="Hello World" name="Antonio Sanz" /> */}
-        <FirstProps />
+        {/* <FirstProps /> */}
 
-        {/* <CounterApp value={ 10 } /> */}
+        <CounterApp value={ 10 } />
     </React.StrictMode>
 );

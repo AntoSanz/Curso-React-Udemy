@@ -1,7 +1,7 @@
 import { getByTestId, render } from '@testing-library/react';
 import { FirstProps } from '../src/FirstProps';
 
-describe('ruebas en <FirstProps /> ', () => {
+describe('Pruebas en <FirstProps /> ', () => {
     // test("Debe coincidir con el snapshot", () => {
     //     const title = "Hello World";
     //     render(<FirstProps title={title}/>);
