@@ -1,21 +1,24 @@
 import { useState } from 'react';
 
-export const AddCategory = () => {
+export const AddCategory = ({ onSetCategories }) => {
     const [inputValue, setInputValue] = useState('Dragon Ball');
 
     const onInputChange = ({ target }) => {
-        console.log(target.value);
         setInputValue(target.value);
     };
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(inputValue);
+        if (inputValue.trim().length <= 1) {
+            return;
+        }
+        onSetCategories((categories) => [inputValue, ...categories]);
+        setInputValue('');
     };
 
     return (
         <form onSubmit={(e) => onSubmit(e)}>
-            <input type="text" placeholder="Buscar GIFs" onChange={(e) => onInputChange(e)} />
+            <input type="text" placeholder="Buscar GIFs" onChange={(e) => onInputChange(e)} value= {inputValue} />
         </form>
     );
 };
