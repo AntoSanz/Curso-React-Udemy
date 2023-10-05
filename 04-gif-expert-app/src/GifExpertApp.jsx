@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { AddCategory } from './styles/components/AddCategory';
+import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
     //useStateSnippet
@@ -15,7 +16,7 @@ export const GifExpertApp = () => {
     const hasDuplicates = (array, el) => {
         el = el.toLowerCase();
         const duplicates = array.map((e) => e.toLowerCase()).includes(el);
-        console.log(`Hay duplicados: ${duplicates}`)
+        console.log(`Hay duplicados: ${duplicates}`);
         return duplicates;
     };
 
@@ -32,9 +33,13 @@ export const GifExpertApp = () => {
 
             {/* Listado de GIFs */}
             <ol>
-                {categories.map((category) => {
-                    return <li key={category}>{category}</li>;
-                })}
+                {categories.map((category) => (
+                    // <div key={category}>
+                    //     <h3>{category}</h3>
+                    //     <li>{category}</li>
+                    // </div>
+                    <GifGrid key={category} category={category} />
+                ))}
             </ol>
         </>
     );
