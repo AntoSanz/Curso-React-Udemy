@@ -8,14 +8,14 @@ export const GifExpertApp = () => {
     const onAddCategory = (newCategory) => {
         //Detectar elementos repetidos
         // if (categories.includes(newCategory)) return;
-        if (!hasDuplicates(categories)) return;
+        if (hasDuplicates(categories, newCategory)) return;
         setCategories([newCategory, ...categories]); //Añade al principio de la lista una categoría
     };
 
-    const hasDuplicates = (array) => {
-        //Si tiene duplicados devuelve false
-        const duplicates = new Set(array).size < array.length;
-        console.log(`No hay duplicados: ${duplicates}`);
+    const hasDuplicates = (array, el) => {
+        el = el.toLowerCase();
+        const duplicates = array.map((e) => e.toLowerCase()).includes(el);
+        console.log(`Hay duplicados: ${duplicates}`)
         return duplicates;
     };
 
@@ -31,7 +31,6 @@ export const GifExpertApp = () => {
             />
 
             {/* Listado de GIFs */}
-            <button onClick={onAddCategory}>Añadir</button>
             <ol>
                 {categories.map((category) => {
                     return <li key={category}>{category}</li>;
