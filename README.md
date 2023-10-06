@@ -6,9 +6,8 @@
 
 ## GIF-EXPERT-APP
 
-Enlace en producción: [gif-expert-app](https://gif-expert-app-asanz.netlify.app/)
-
-Repositorio: https://github.com/AntoSanz/gif-app
+* Enlace en producción: [gif-expert-app](https://gif-expert-app-asanz.netlify.app/)
+* Repositorio: https://github.com/AntoSanz/gif-app
 
 
 # React + Vite
