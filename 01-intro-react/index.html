@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Cargar React -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>ReactApp</title>
+
+</head>
+
+<body>
+    <div id="holaMundo"></div>
+    <div id="greetings"></div>
+
+    <script type="text/babel">
+        const h1Tag = <h1>Hola Mundo </h1>;
+        const divholaMundo = document.querySelector('#holaMundo');
+
+        const nombre = 'Antonio';
+        const h2Tag = <h2> Hola, soy {nombre}</h2>;
+        const divGreetings = document.querySelector('#greetings');
+
+        ReactDOM.render(h1Tag, divholaMundo);
+        ReactDOM.render(h2Tag, divGreetings);
+
+    </script>
+</body>
+
+</html>
