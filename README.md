@@ -25,6 +25,9 @@ Currently, two official plugins are available:
 Este proyecto esta hecho con Yarn. Algunos comandos básicos son:
 
 ```yarn install```
+
 ```yarn dev```
+
 ```yarn test```
+
 ```yarn build```
